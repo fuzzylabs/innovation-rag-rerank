@@ -32,7 +32,7 @@ testpaths = [
 # mypy configuration
 [tool.mypy]
 show_error_codes = true
-exclude = ["docs", "tests", "LICENSE"]
+exclude = ["docs", "tests", "LICENSE", "**/*.ipynb"]
 strict = true
 namespace_packages = true
 

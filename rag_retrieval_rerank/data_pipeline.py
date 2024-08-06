@@ -18,4 +18,6 @@ def prepare_data(file_path: str, text_splitter: TextSplitter) -> list[Document]:
     """
     loader = PyPDFLoader(file_path)
     docs = loader.load_and_split(text_splitter=text_splitter)
-    return docs
+    texts = [doc.page_content for doc in docs]
+
+    return texts

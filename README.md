@@ -62,7 +62,7 @@ These vectors enable vector search, allowing us to compare their proximity to a 
   <img width="50%" src="./rag_retrieval_rerank/assets/bi-encoder.png" />
 </p>
 
-Due to this information loss, the top 3 vector search results, for example, may miss some relevant information. This relevant information might be present in other documents within our database, but if they fall below our top_k cutoff, they won't be returned.toff, so they won’t be returned.
+Due to this information loss, the top 3 vector search results, for example, may miss some relevant information. This relevant information might be present in other documents within our database, but if they fall below our top_k cutoff, they won't be returned.
 
 ## Reranking
 

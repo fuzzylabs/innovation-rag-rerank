@@ -61,6 +61,10 @@ These vectors enable vector search, allowing us to compare their proximity to a 
 <p align="center">
   <img width="50%" src="./rag_retrieval_rerank/assets/bi-encoder.png" />
 </p>
+<p>
+    <em>Screens shots from https://www.pinecone.io/learn/series/rag/rerankers/
+</em>
+</p>
 
 Due to this information loss, the top 3 vector search results, for example, may miss some relevant information. This relevant information might be present in other documents within our database, but if they fall below our top_k cutoff, they won't be returned.
 
@@ -70,6 +74,10 @@ Reranking is post-retrieval step. It aims to improve retrieval recall; simply pu
 
 <p align="center">
   <img width="50%" src="./rag_retrieval_rerank/assets/reranker.png" />
+</p>
+<p>
+    <em>Screens shots from https://www.pinecone.io/learn/series/rag/rerankers/
+</em>
 </p>
 
 The process of reranking is as follows:

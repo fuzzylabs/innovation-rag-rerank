@@ -81,6 +81,7 @@ The process of reranking is as follows:
 
 # Further Reading
 
+- [Lunch & Learn Blog Series - Reranking]()
 - [Reranking Research](https://www.notion.so/fuzzylabs/Reranking-04e3f64f27724e51875abd7eb7d97a3c#6f1682a7b243482a8d226f675816851c)
 - [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)
 - [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html)

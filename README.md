@@ -58,8 +58,8 @@ In our naive RAG model, we process the text chunks through an embedding model to
 
 These vectors enable vector search, allowing us to compare their proximity to a query vector using a similarity metric like Cosine similarity.
 
-| ![bi-encoder.jpg](./rag_retrieval_rerank/assets/bi-encoder.png) | 
-|:--:| 
+| ![bi-encoder.jpg](./rag_retrieval_rerank/assets/bi-encoder.png) |
+|:--:|
 | *Diagram taken from https://www.pinecone.io/learn/series/rag/rerankers* |
 
 Due to this information loss, the top 3 vector search results, for example, may miss some relevant information. This relevant information might be present in other documents within our database, but if they fall below our top_k cutoff, they won't be returned.
@@ -68,8 +68,8 @@ Due to this information loss, the top 3 vector search results, for example, may 
 
 Reranking is post-retrieval step. It aims to improve retrieval recall; simply put, the more relevant documents returned, the higher the recall will be.
 
-| ![reranker.jpg](./rag_retrieval_rerank/assets/reranker.png) | 
-|:--:| 
+| ![reranker.jpg](./rag_retrieval_rerank/assets/reranker.png) |
+|:--:|
 | *Diagram taken from https://www.pinecone.io/learn/series/rag/rerankers* |
 
 

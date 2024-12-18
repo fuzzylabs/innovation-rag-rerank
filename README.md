@@ -75,9 +75,11 @@ Reranking is post-retrieval step. It aims to improve retrieval recall; simply pu
 <p align="center">
   <img width="50%" src="./rag_retrieval_rerank/assets/reranker.png" />
 </p>
-<p>
-    <em>Screens shots from https://www.pinecone.io/learn/series/rag/rerankers/
-</em>
+<p align="center">
+    <small>
+      <em>Screens shots from https://www.pinecone.io/learn/series/rag/rerankers/
+      </em>
+    </small>
 </p>
 
 The process of reranking is as follows:

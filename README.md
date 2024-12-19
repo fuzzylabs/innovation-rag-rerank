@@ -1,4 +1,4 @@
-# RAG Rerank Retrieval
+#  L&L Blog Series - RAG Rerank Retrieval
 
 In this project, we will experiment and compare the results of an RAG application with context reranking versus no reranking.
 

@@ -34,7 +34,7 @@ A quick walk through on what the workflow for a Naive RAG system looks like:
 
 ## Data Ingestion
 
-Before we can retrieve the revenant documents from our database, we fist need to store them somewhere (External memory), this step isknown as indexing.
+Before we can retrieve the relevant documents from our database, we fist need to store them somewhere (External memory), this step is known as indexing.
 
 The raw documents are pre-processed, cleaned, and chunked to be indexed into a vector dataset. The text is chunked into smaller texts as it provides the right granularity and keeps the context of the text to be added to LLM limited in length. The quality of index construction determines whether the correct context can be obtained in the retrieval phase.
 

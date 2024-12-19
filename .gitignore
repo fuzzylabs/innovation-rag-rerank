@@ -232,6 +232,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Data for experiment
-rag_retrieval_rerank/data/a_beginners_guide_to_designing_embedded_system_applications_on_arm_cortex-m_microcontrollers.pdf

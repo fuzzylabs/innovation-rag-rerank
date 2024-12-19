@@ -9,8 +9,6 @@ If you haven't already done so, please read [DEVELOPMENT.md](DEVELOPMENT.md) for
 
 ## 💻 Run Locally
 
-> Note: Add a pdf dataset to the [data](rag_search_retrieval/data) folder.
-
 ```bash
 poetry shell
 poetry install

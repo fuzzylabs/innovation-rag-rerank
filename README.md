@@ -1,4 +1,4 @@
-# RAG Rerank Retrieval
+#  L&L Blog Series - RAG Rerank Retrieval
 
 In this project, we will experiment and compare the results of an RAG application with context reranking versus no reranking.
 
@@ -8,8 +8,6 @@ The [experiment notebook](./rag_retrieval_rerank/experiment_rag_retrieval_rerank
 If you haven't already done so, please read [DEVELOPMENT.md](DEVELOPMENT.md) for instructions on how to set up your virtual environment using Poetry.
 
 ## 💻 Run Locally
-
-> Note: Add a pdf dataset to the [data](rag_search_retrieval/data) folder.
 
 ```bash
 poetry shell
@@ -34,7 +32,7 @@ A quick walk through on what the workflow for a Naive RAG system looks like:
 
 ## Data Ingestion
 
-Before we can retrieve the revenant documents from our database, we fist need to store them somewhere (External memory), this step isknown as indexing.
+Before we can retrieve the relevant documents from our database, we fist need to store them somewhere (External memory), this step is known as indexing.
 
 The raw documents are pre-processed, cleaned, and chunked to be indexed into a vector dataset. The text is chunked into smaller texts as it provides the right granularity and keeps the context of the text to be added to LLM limited in length. The quality of index construction determines whether the correct context can be obtained in the retrieval phase.
 
@@ -58,9 +56,9 @@ In our naive RAG model, we process the text chunks through an embedding model to
 
 These vectors enable vector search, allowing us to compare their proximity to a query vector using a similarity metric like Cosine similarity.
 
-<p align="center">
-  <img width="50%" src="./rag_retrieval_rerank/assets/bi-encoder.png" />
-</p>
+| ![bi-encoder.jpg](./rag_retrieval_rerank/assets/bi-encoder.png) |
+|:--:|
+| *Diagram taken from https://www.pinecone.io/learn/series/rag/rerankers* |
 
 Due to this information loss, the top 3 vector search results, for example, may miss some relevant information. This relevant information might be present in other documents within our database, but if they fall below our top_k cutoff, they won't be returned.
 
@@ -68,9 +66,10 @@ Due to this information loss, the top 3 vector search results, for example, may 
 
 Reranking is post-retrieval step. It aims to improve retrieval recall; simply put, the more relevant documents returned, the higher the recall will be.
 
-<p align="center">
-  <img width="50%" src="./rag_retrieval_rerank/assets/reranker.png" />
-</p>
+| ![reranker.jpg](./rag_retrieval_rerank/assets/reranker.png) |
+|:--:|
+| *Diagram taken from https://www.pinecone.io/learn/series/rag/rerankers* |
+
 
 The process of reranking is as follows:
 
@@ -80,6 +79,7 @@ The process of reranking is as follows:
 
 # Further Reading
 
+- [Lunch & Learn Blog Series - Reranking]()
 - [Reranking Research](https://www.notion.so/fuzzylabs/Reranking-04e3f64f27724e51875abd7eb7d97a3c#6f1682a7b243482a8d226f675816851c)
 - [Rerankers and Two-Stage Retrieval](https://www.pinecone.io/learn/series/rag/rerankers/)
 - [Building A Generative AI Platform](https://huyenchip.com/2024/07/25/genai-platform.html)
